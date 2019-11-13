@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Controls from './components/Controls';
+import ControlPanel from './components/ControlPanel';
 import DrumPanel from './components/DrumPanel';
 
 function App() {
   return (
     <div id="app">
       <div>
-        <Controls />
+        <ControlPanel />
       </div>
       <div>
         <DrumPanel />
