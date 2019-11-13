@@ -1,0 +1,16 @@
+.label-block {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.label {
+  border: solid thin #043465;
+  height: 55%;
+  width: 80%;
+  margin: 0 auto;
+  height: 70%;
+  border-radius: 5px;
+}
