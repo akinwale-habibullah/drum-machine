@@ -1,0 +1,22 @@
+.power-switch-container {
+  display: grid;
+  align-items: center;
+}
+
+.power-switch {
+  border-radius: 5px;
+  height: 42%;
+  width: 50%;
+  margin: 0 auto;
+  border: solid thin #9496e6;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  background-color: #d4d4f1;
+}
+
+.switch-button{
+  background-color: #2e8dec;
+  width: 50%;
+  height: 100%;
+}
