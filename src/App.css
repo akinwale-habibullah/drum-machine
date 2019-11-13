@@ -1,0 +1,11 @@
+#app{
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  line-height: 1.5em;
+  color: #333;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 150px auto;
+  row-gap: 10px;
+}

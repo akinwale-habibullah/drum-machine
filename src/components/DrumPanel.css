@@ -1,0 +1,13 @@
+.drum-panel{
+  padding: .9em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  min-height: 300px;
+  text-align: center;
+  border: solid thin red;
+  align-items: center;
+  border-radius: 5px;
+  /* border: solid thin red; */
+}
