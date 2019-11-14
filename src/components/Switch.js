@@ -1,6 +1,6 @@
 import React from 'react';
 
-class TypeSwitch extends React.Component {
+class PowerSwitch extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -16,12 +16,11 @@ class TypeSwitch extends React.Component {
     }));
   }
 
-
   render(){
     return (
-      <div className="switch-container">
-        <div style={{alignItems: "center",display: "grid", gridTemplateColumns: "0.8fr 1.2fr", height: "100%", justifyItems: "right"}}>
-          <div>Bank</div>
+      <div className="switch-container" style={this.props.containerStyle}>
+        <div style={this.props.style}>
+          <div>{this.props.label}</div>
           <div className="switch" onClick={this.handleSwitch}>
             {
               this.state.status === true 
@@ -35,4 +34,4 @@ class TypeSwitch extends React.Component {
   }
 }
 
-export default TypeSwitch;
+export default PowerSwitch;
