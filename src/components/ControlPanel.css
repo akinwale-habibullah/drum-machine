@@ -2,7 +2,7 @@
   min-height: 100%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 1.5fr 0.5fr;
   row-gap: 8px;
   border: solid thin red;
 }
