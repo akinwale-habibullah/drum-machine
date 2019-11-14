@@ -1,13 +1,38 @@
 import React from 'react';
 
-const TypeSwitch = (props) => {
-  return (
-    <div className="switch-container">
-      <div className="switch">
-        <div className="switch-button"></div>
+class TypeSwitch extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      status: false
+    }
+
+    this.handleSwitch = this.handleSwitch.bind(this);
+  }
+
+  handleSwitch(e){
+    this.setState((state, props) => ({
+      status: !state.status
+    }));
+  }
+
+
+  render(){
+    return (
+      <div className="switch-container">
+        <div style={{alignItems: "center",display: "grid", gridTemplateColumns: "0.8fr 1.2fr", height: "100%", justifyItems: "right"}}>
+          <div>Bank</div>
+          <div className="switch" onClick={this.handleSwitch}>
+            {
+              this.state.status === true 
+              ?<div className="switch-button" style={{justifySelf: "right"}}></div> 
+              :<div className="switch-button"></div> 
+            }
+          </div>
+        </div>
       </div>
-    </div>
-  )
+    );
+  }
 }
 
 export default TypeSwitch;
