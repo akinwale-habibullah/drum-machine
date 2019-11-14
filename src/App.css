@@ -12,15 +12,17 @@
 }
 
 .switch-container {
-  display: grid;
+  display: block;
+  max-height: 100px;
   align-items: center;
+  overflow: scroll;
+  width: 80%;
 }
 
 .switch {
   border-radius: 5px;
   height: 42%;
-  width: 60%;
-  margin: 0 auto;
+  width: 80%;
   border: solid thin #9496e6;
   display: grid;
   grid-template-columns: 1fr;
