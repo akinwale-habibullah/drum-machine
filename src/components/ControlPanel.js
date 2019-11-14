@@ -3,6 +3,7 @@ import './ControlPanel.css';
 import PowerSwitch from './PowerSwitch';
 import TypeSwitch from './TypeSwitch';
 import Label from './Label';
+import VolumeControl from './VolumeControl';
 
 const ControlPanel = (props) => {
   return (
@@ -12,8 +13,9 @@ const ControlPanel = (props) => {
       <div className="label-container">
         <Label />
       </div>
-      
-      <div className="volume">4</div>
+      <div className="volume-container">
+        <VolumeControl />
+      </div>
     </div>
   )
 }

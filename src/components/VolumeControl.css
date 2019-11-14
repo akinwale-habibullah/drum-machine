@@ -1,0 +1,16 @@
+.volume-block {
+  padding: 0;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.volume-control {
+  
+}
+
+
